@@ -1,0 +1,6 @@
+<h2>Leaderboard</h2>
+<ol>
+    {% for score in leaderboard_data %}
+        <li>{{ score.user.username }} - {{ score.score }}</li>
+    {% endfor %}
+</ol>

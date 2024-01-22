@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'submit_score' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit Score</button>
+</form>
